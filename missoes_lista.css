@@ -1,0 +1,193 @@
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#cabecalho .btn button {
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+#cabecalho .btn button:hover {
+    background-color: black;
+    color: #E5E5E5;
+}
+
+#cabecalho h1 {
+    font-size: 2rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
+}
+
+#filtros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 12.5rem;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    width: calc(100% - 25rem);
+}
+
+#input-nome-missao, #input-dificuldade, #input-resultado {
+    padding: 0.625rem;
+    margin: 0;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #ccc;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    cursor: pointer;
+    width: 15.625rem;
+}
+
+#btn-busca-missoes, #btn-todas-missoes {
+    cursor: pointer;
+    border-radius: 0.3125rem; 
+    padding: 0.375rem 0.75rem; 
+    font-size: 1rem; 
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+#btn-busca-missoes:hover, #btn-todas-missoes:hover {
+    background-color: black;
+    color: #ccc;
+}
+
+#tabela-missoes {
+    width: calc(100% - 25rem);
+    margin: 2rem auto;
+    border-collapse: collapse;
+}
+
+#btns-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-excluir, .btn-editar {
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+.btn-excluir:hover {
+    background-color: red;
+    color: black;
+}
+
+.btn-editar:hover {
+    background-color: black;
+    color: #ccc;
+}
+
+#tabela-missoes thead th {
+    background-color: #333;
+    color: #E5E5E5;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#tabela-missoes tbody tr {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+#tabela-missoes tbody td {
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 0.0625rem solid #ddd;
+    text-align: center;
+}
+
+#tabela-missoes tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+#tabela-missoes tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 48rem) {
+    #tabela-missoes {
+        width: 100%;
+    }
+    
+    #tabela-missoes thead th, #tabela-missoes tbody td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+#editar-missao-dialog form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+#editar-missao-dialog label {
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+#editar-missao-dialog input, #editar-missao-dialog select, #editar-missao-dialog textarea {
+    width: 100%;
+    margin: 0;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid black;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+#editar-missao-dialog .linha-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#editar-missao-dialog .linha-tripla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#salvar-edicao-missao, #btn-sair-edicao-missao {
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+#btn-sair-edicao-missao {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#salvar-edicao-missao:hover {
+    background-color: green;
+    color: black;
+}
+
+#btn-sair-edicao-missao:hover {
+    background-color: red;
+    color: black;
+}

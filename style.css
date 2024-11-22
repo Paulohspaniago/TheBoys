@@ -1,0 +1,36 @@
+#titulos {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.7rem;
+
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#btn-herois, #btn-crimes, #btn-missoes, #btn-batalha {
+    width: 31.25rem;
+    padding: 2% 9.4%;
+    border-radius: 0.5rem;
+
+    font-size: 1.5rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+
+    display: block;
+    margin: auto;
+}
+
+#btn-herois:hover, #btn-crimes:hover, #btn-missoes:hover, #btn-batalha:hover {
+    background-color: black;
+    color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+}

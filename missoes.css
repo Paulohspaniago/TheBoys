@@ -1,0 +1,209 @@
+/* Cabeçalho */
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#btn-home {
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 2rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    cursor: pointer;
+}
+
+#btn-home:hover {
+    background-color: black;
+    color: #E5E5E5;
+}
+
+#titulo {
+    font-size: 4rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
+}
+
+.modal {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header, .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-confirm {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Botões principais */
+.btn {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#btn-cadastrar, #btn-mostrar {
+    width: 31.25rem;
+    padding: 2% 9.4%;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+}
+
+#btn-cadastrar:hover, #btn-mostrar:hover {
+    background-color: black;
+    color: #E5E5E5;
+    font-weight: bold;
+}
+
+/* Dialog e Formulário */
+#dialog-cadastrar {
+    border: 0.0625rem solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 40rem;
+    width: 90%;
+    margin: auto;
+    font-family: "Nanum Gothic Coding", monospace;
+    background-color: #F5F5F5;
+}
+
+#dialog-cadastrar h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#dialog-cadastrar form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+#dialog-cadastrar label {
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+#dialog-cadastrar input, #dialog-cadastrar select, #dialog-cadastrar textarea {
+    width: 100%;
+    margin: 0;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid black;
+    font-size: 1rem;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+/* Botões do diálogo */
+#btn-dialog-cadastrar {
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.5rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    background-color: #F0F0F0;
+    border: 0.0625rem solid black;
+}
+
+#btn-dialog-cadastrar:hover {
+    background-color: green;
+    color: #E5E5E5;
+}
+
+#btn-dialog-cadastrar-fechar {
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    padding: 0.8rem 1.3rem;
+    font-size: 2rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #F0F0F0;
+    border: 0.0625rem solid black;
+}
+
+#btn-dialog-cadastrar-fechar:hover {
+    background-color: red;
+}
+
+/* Layout de colunas */
+#dialog-cadastrar .linha-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#dialog-cadastrar .linha-tripla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Textarea */
+#dialog-cadastrar textarea {
+    resize: none;
+}

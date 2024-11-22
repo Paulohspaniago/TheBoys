@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missões</title>
+    <link rel="stylesheet" href="style/missoes.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div id="cabecalho">
+        <div class="btn">
+            <a href="index.html">
+                <button id="btn-home">Home</button>
+            </a>
+        </div>
+        <h1 id="titulo">CRUD de Missões</h1>
+    </div>
+
+    <!-- Botões de Ação -->
+    <div class="btn">
+        <button id="btn-cadastrar-missao">Cadastrar Missão</button>
+    </div>
+    <div class="btn">
+        <a href="missoes_lista.html">
+            <button id="btn-mostrar-missoes">Mostrar Missões</button>
+        </a>
+    </div>
+
+    <!-- Modal de Cadastro de Missão -->
+    <dialog id="dialog-cadastrar-missao" class="modal">
+                <h2>Cadastrar Missão</h2>
+
+                <form id="form-cadastrar-missao">
+                    <!-- Nome da Missão -->
+                    <div class="form-group">
+                        <label for="nome-missao">Nome da Missão:</label>
+                        <input type="text" id="nome-missao" name="nome-missao" required>
+                    </div>
+
+                    <!-- Descrição da Missão -->
+                    <div class="form-group">
+                        <label for="descricao-missao">Descrição da Missão:</label>
+                        <textarea id="descricao-missao" name="descricao-missao" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Recompensa -->
+                    <div class="form-group">
+                        <label for="recompensa-missao">Recompensa:</label>
+                        <input type="text" id="recompensa-missao" name="recompensa-missao" required>
+                    </div>
+
+                    <!-- Resultado -->
+                    <div class="form-group">
+                        <label for="resultado-missao">Resultado:</label>
+                        <select id="resultado-missao" name="resultado-missao" required>
+                            <option value="sucesso">Sucesso</option>
+                            <option value="fracasso">Fracasso</option>
+                            <option value="em_andamento">Em andamento</option>
+                        </select>
+                    </div>
+
+                    <!-- Nível de Dificuldade -->
+                    <div>
+                        <label for="nivel-dificuldade">Nível de Dificuldade:</label>
+                        <select id="nivel-dificuldade" name="nivel-dificuldade" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                    
+                        </select>
+                    </div>
+                
+                    <button id="btn-dialog-cadastrar" class="btn-confirm">Cadastrar</button>
+                    <button type="button" id="btn-dialog-cadastrar-fechar">X</button>
+                    
+                </form>
+    </dialog>
+
+    <!-- Container para Exibir Missões -->
+    <section id="missoes-container">
+        <!-- As missões serão listadas dinamicamente aqui -->
+    </section>
+
+    <script src="js/missoes.js"></script>
+</body>
+</html>

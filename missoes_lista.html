@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Missões</title>
+    <link rel="stylesheet" href="style/missoes_lista.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Lista de Missões</h1>
+        <div class="btn">
+            <a href="missoes.html">
+                <button>Voltar</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="filtros">
+        <input type="text" id="input-nome-missao" placeholder="Nome da Missão">
+        <select id="input-dificuldade">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <select id="input-resultado">
+            <option value="">Resultado</option>
+            <option value="sucesso">Sucesso</option>
+            <option value="fracasso">Fracasso</option>
+            <option value="em_andamento">Em andamento</option>
+        </select>
+        <button id="btn-busca-missoes">Buscar</button>
+        <button id="btn-todas-missoes">Mostrar Todas</button>
+    </div>
+
+    <table id="tabela-missoes">
+        <thead>
+            <tr>
+                <th>Ações</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Recompensa</th>
+                <th>Resultado</th>
+                <th>Nível de Dificuldade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- As missões serão inseridas aqui dinamicamente -->
+        </tbody>
+    </table>
+
+    <dialog id="editar-missao-dialog">
+        <h2>Editar Missão</h2>
+        <form id="form-editar-missao">
+            <input type="hidden" id="editar-id-missao">
+            <div>
+                <label for="editar-nome-missao">Nome:</label>
+                <input type="text" id="editar-nome-missao" required>
+            </div>
+            <div>
+                <label for="editar-descricao-missao">Descrição:</label>
+                <textarea id="editar-descricao-missao" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="editar-recompensa">Recompensa:</label>
+                <input type="text" id="editar-recompensa" required>
+            </div>
+            <div>
+                <label for="editar-resultado">Resultado:</label>
+                <select id="editar-resultado" required>
+                    <option value="sucesso">Sucesso</option>
+                    <option value="fracasso">Fracasso</option>
+                    <option value="em_andamento">Em andamento</option>
+                </select>
+            </div>
+            <div>
+                <label for="editar-nivel-dificuldade">Nível de Dificuldade:</label>
+                <select id="editar-nivel-dificuldade" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <button type="button" id="salvar-edicao-missao">Salvar</button>
+            <button type="button" id="btn-sair-edicao-missao">Cancelar</button>
+        </form>
+    </dialog>
+
+    <script src="js/missoes_lista.js"></script>
+</body>
+</html>
